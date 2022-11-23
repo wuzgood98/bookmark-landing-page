@@ -26,7 +26,7 @@ function App() {
   const { img, info, title } = features[value]
 
   return (
-    <div className="min-h-screen w-full font-rubik bg-white">
+    <main className="min-h-screen w-full font-rubik bg-white">
       <header className='flex w-full p-7 justify-between items-center sm:max-w-6xl 2xl:max-w-[90rem] sm:mx-auto'>
         <a href="#">
           <img src={logo} alt="logo" />
@@ -88,7 +88,7 @@ function App() {
         </nav>
       </header>
 
-      <div className='w-full relative'>
+      <section className='w-full relative'>
         <div className="lg:block hidden absolute bg-softBlue h-[19.5rem] xl:h-[21.2rem] w-[41%] bottom-0 right-0 rounded-tl-full rounded-bl-full"></div>
         <div className="w-full flex flex-col gap-8 md:mb-14 lg:flex-row-reverse md:items-center md:max-w-6xl 2xl:max-w-[90rem] md:mx-auto">
 
@@ -109,17 +109,17 @@ function App() {
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className='text-center p-7 md:max-w-xl md:mx-auto flex flex-col gap-4'>
+      <section className='text-center p-7 md:max-w-xl md:mx-auto flex flex-col gap-4'>
         <p className='capitalize text-veryDarkBlue text-xl sm:text-2xl md:text-3xl font-bold'>Features</p>
         <p className='text-grayishBlue sm:text-lg'>
           Our aim is to make it quick and easy for you to access your favourite websites.
           Your bookmarks sync between your devices so you can access them on the go.
         </p>
-      </div>
+      </section>
 
-      <div className='p-7 flex flex-col md:flex-row md:justify-between md:mb-8 md:max-w-2xl md:mx-auto md:border-b border-grayishBlue/40 sm:py-3 sm:px-5'>
+      <section className='p-7 flex flex-col md:flex-row md:justify-between md:mb-8 md:max-w-2xl md:mx-auto md:border-b border-grayishBlue/40 sm:py-3 sm:px-5'>
         {
           features.map((item, index) => (
             <div key={item.id} className='border-t text-center border-grayishBlue/40 font-medium last:border-b md:border-t-0 md:border-b-0 md:last:border-b-0'>
@@ -127,7 +127,7 @@ function App() {
             </div>
           ))
         }
-      </div>
+      </section>
 
       <article className='w-full relative'>
         <div className="lg:block hidden absolute bg-softBlue h-[30vmin] xl:h-[36.5vmin] w-[42%] bottom-0 left-0 rounded-tr-full rounded-br-full"></div>
@@ -146,7 +146,7 @@ function App() {
       </article>
 
 
-      <div className='w-full flex flex-col gap-12 mb-16 text-center p-7 xl:p-0 sm:max-w-[60%] md:max-w-4xl 2xl:max-w-[90rem] sm:mx-auto'>
+      <section className='w-full flex flex-col gap-12 mb-16 text-center p-7 xl:p-0 sm:max-w-[60%] md:max-w-4xl 2xl:max-w-[90rem] sm:mx-auto'>
         <div className='sm:max-w-xl sm:mx-auto'>
           <p className='text-veryDarkBlue text-2xl font-bold mb-4'>Download the extension</p>
           <p className='text-grayishBlue sm:text-lg'>
@@ -168,9 +168,9 @@ function App() {
             ))
           }
         </div>
-      </div>
+      </section>
 
-      <div className='w-full flex flex-col gap-10 sm:max-w-xl mb-4 sm:mx-auto text-center p-7'>
+      <section className='w-full flex flex-col gap-10 sm:max-w-xl mb-4 sm:mx-auto text-center p-7'>
         <div className="flex flex-col gap-4">
           <p className='text-veryDarkBlue text-2xl font-bold sm:text-3xl'>Frequently Asked Questions</p>
           <p className='text-grayishBlue text-sm sm:text-lg'>
@@ -187,14 +187,14 @@ function App() {
             />
           ))
         }
-      </div>
+      </section>
 
       <div className='w-full grid place-content-center mb-24'>
         <a href='#' className="bg-softBlue text-white text-sm rounded-md drop-shadow-md py-3 px-5">More Info</a>
       </div>
 
       <Footer />
-    </div>
+    </main>
   )
 }
 
