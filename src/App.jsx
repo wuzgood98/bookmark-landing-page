@@ -38,23 +38,23 @@ function App() {
         <nav className='hidden lg:mr-16 md:block'>
           <ul className='text-veryDarkBlue flex gap-8 xl:gap-10 items-center uppercase text-sm w-full text-center'>
             <li className='group py-5'>
-              <a href="#" className='tracking-widest sm:group-hover:text-softRed transition-colors'>Features</a>
+              <a href="#" aria-label='features' className='tracking-widest sm:group-hover:text-softRed transition-colors'>Features</a>
             </li>
             <li className='group py-5'>
-              <a href="#" className='tracking-widest sm:group-hover:text-softRed transition-colors'>Pricing</a>
+              <a href="#" aria-label='pricing' className='tracking-widest sm:group-hover:text-softRed transition-colors'>Pricing</a>
             </li>
             <li className='group py-5'>
-              <a href="#" className='tracking-widest sm:group-hover:text-softRed transition-colors'>Contact</a>
+              <a href="#" aria-label='contact' className='tracking-widest sm:group-hover:text-softRed transition-colors'>Contact</a>
             </li>
             <li className='group px-8 py-2 border border-transparent bg-softRed rounded-md sm:hover:bg-transparent sm:hover:border-softRed  transition-all'>
-              <a href="#" className='w-full py-2 tracking-widest text-white sm:group-hover:text-softRed transition-colors'>Login</a>
+              <a href="#" aria-label='login' className='w-full py-2 tracking-widest text-white sm:group-hover:text-softRed transition-colors'>Login</a>
             </li>
           </ul>
         </nav>
 
         <nav className={`fixed top-0 left-0 ${menuOpen ? 'scale-y-100 visible ' : 'scale-y-0 invisible'} h-full z-30 w-full bg-veryDarkBlue/95  p-7 transition-all origin-top duration-200 sm:hidden`}>
           <div className="flex justify-between w-full mb-12">
-            <a href="#">
+            <a href="#" aria-label='homepage'>
               <img src={whiteLogo} alt="logo" />
             </a>
             <button onClick={closeMenu} className='active:scale-95 transition-transform'>
@@ -64,24 +64,24 @@ function App() {
 
           <ul className='text-white uppercase text-xl w-full text-center'>
             <li className={`border-t border-white/20 py-5 ${menuOpen ? 'translate-y-0' : '-translate-y-6'} transition-transform delay-75`}>
-              <a href="#" className='tracking-widest font-light'>Features</a>
+              <a href="#" aria-label='features' className='tracking-widest font-light'>Features</a>
             </li>
             <li className={`border-t border-white/20 py-5 ${menuOpen ? 'translate-y-0' : '-translate-y-8'} transition-transform delay-[90ms]`}>
-              <a href="#" className='tracking-widest font-light'>Pricing</a>
+              <a href="#" aria-label='pricing' className='tracking-widest font-light'>Pricing</a>
             </li>
             <li className={`border-t border-white/20 py-5 ${menuOpen ? 'translate-y-0' : '-translate-y-9'} transition-transform delay-[105ms]`}>
-              <a href="#" className='tracking-widest font-light'>Contact</a>
+              <a href="#" aria-label='contact' className='tracking-widest font-light'>Contact</a>
             </li>
             <li className={`border-t border-white/20 py-5 ${menuOpen ? 'translate-y-0' : '-translate-y-10'} flex transition-transform delay-[120ms]`}>
-              <a href="#" className='w-full py-2 tracking-widest border-2 border-white rounded-md'>Login</a>
+              <a href="#" aria-label='login' className='w-full py-2 tracking-widest border-2 border-white rounded-md'>Login</a>
             </li>
           </ul>
 
           <div className="absolute w-max flex items-center gap-9 right-0 left-0 bottom-10 mx-auto">
-            <a href="#">
+            <a href="#" aria-label='Visit our facebook page'>
               <img src={iconFacebook} alt="logo" />
             </a>
-            <a href="#">
+            <a href="#" aria-label='Visit our twitter page'>
               <img src={iconTwitter} alt="logo" />
             </a>
           </div>
@@ -140,7 +140,7 @@ function App() {
           <div className='p-7 h-max flex flex-col gap-4 md:max-w-lg'>
             <h1 className='text-veryDarkBlue text-2xl font-bold'>{title}</h1>
             <p className='text-grayishBlue sm:text-lg'>{info}</p>
-            <a href="#" className='hidden bg-softBlue rounded-md px-4 py-3 text-white w-max self-center sm:block lg:self-start'>More Info</a>
+            <a href="#" aria-label={`Read more about ${title}`} className='hidden bg-softBlue rounded-md px-4 py-3 text-white w-max self-center sm:block lg:self-start'>More Info</a>
           </div>
         </div>
       </article>
@@ -190,7 +190,7 @@ function App() {
       </section>
 
       <div className='w-full grid place-content-center mb-24'>
-        <a href='#' className="bg-softBlue text-white text-sm rounded-md drop-shadow-md py-3 px-5">More Info</a>
+        <a href='#' aria-label='Read more aboutFrequently Asked Questions' className="bg-softBlue text-white text-sm rounded-md drop-shadow-md py-3 px-5">More Info</a>
       </div>
 
       <Footer />
