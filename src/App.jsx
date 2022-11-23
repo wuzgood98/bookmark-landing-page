@@ -98,7 +98,7 @@ function App() {
           </div>
 
           <div className="text-center space-y-6 p-8 lg:text-left lg:max-w-lg">
-            <h1 className='capitalize text-veryDarkBlue text-3xl font-bold md:text-4xl'>a simple bookmark manager</h1>
+            <h1 className='capitalize text-veryDarkBlue text-3xl font-medium md:text-[2.5rem] md:leading-[3rem]'>a simple bookmark manager</h1>
             <p className='text-grayishBlue md:text-lg'>
               A clean and simple interface to organize your favourite websites. Open a new
               browser tab and see your sites load instantly. Try it for free.
