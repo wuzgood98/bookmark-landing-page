@@ -138,7 +138,7 @@ function App() {
           </div>
 
           <div className='p-7 h-max flex flex-col gap-4 md:max-w-lg'>
-            <p className='text-veryDarkBlue text-2xl font-bold'>{title}</p>
+            <h1 className='text-veryDarkBlue text-2xl font-bold'>{title}</h1>
             <p className='text-grayishBlue sm:text-lg'>{info}</p>
             <a href="#" className='hidden bg-softBlue rounded-md px-4 py-3 text-white w-max self-center sm:block lg:self-start'>More Info</a>
           </div>
